@@ -6,8 +6,7 @@ module Apartment
     #   Uses a hash to find the corresponding tenant name for the host
     #
     class HostHash < Generic
-      def initialize(app, hash = {}, processor = nil)
-        super app, processor
+      def initialize(hash = {})
         @hash = hash
       end
 
